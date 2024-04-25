@@ -1,4 +1,5 @@
 // Initialize canvas
+// More comments
 const canvas = document.getElementById('gameCanvas'); // Get the game canvas element
 const ctx = canvas.getContext('2d'); // Get the 2D rendering context for drawing on the canvas
 
