@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            backgrond-color: #f0f0f0;
+        }
+        #gameCanvas {
+            border: 1px solid black; /* Add a border around the canvas */
+        }
+        #scoreContainer {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #f8f9fa; /* Optional: change this to match your site's color scheme */
+        padding: 10px 0;
+        z-index: 1000; /* Optional: to ensure the score is always on top */
+        }
+
+        #score {
+        font-size: 1.5em; /* Optional: adjust to your preference */
+        }
+    </style>
+</head>
+<body>
+    <div id="scoreContainer">
+        <div id="score">Score: 0</div>
+    </div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <!-- Include the JavaScript file -->
+    <script src="snake.js"></script>
+</body>
+</html>
